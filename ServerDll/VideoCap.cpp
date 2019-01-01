@@ -131,7 +131,8 @@ bool CVideoCap::Initialize(int nWidth, int nHeight)
 	}
 
 	// 将捕获窗同驱动器连接
-	for (int i = 0; i < 10; i++)
+	int i = 0;
+	for (; i < 10; i++)
 	{
 		if (capDriverConnect(m_hWndCap, i))
 			break;

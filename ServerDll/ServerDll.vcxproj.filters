@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5ba5cdc7-4b94-4eea-aba1-3d72b45adae2}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{c88f8766-a698-46bd-9183-fb1a75c2bdec}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="公用函数">
+      <UniqueIdentifier>{e104fdf9-9fe9-4e64-b730-805775c16d66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="连接请求类">
+      <UniqueIdentifier>{951ba0f1-fa1b-4be4-9cb4-f44e2340d3a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="登陆">
+      <UniqueIdentifier>{961bd3a7-047a-4226-9505-e6ba5a53ae97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="注册表">
+      <UniqueIdentifier>{3696ec40-51b1-422a-9041-8f7d08c0c2c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="缓冲区">
+      <UniqueIdentifier>{da9a2170-54ba-4f90-9f14-f0f70ef2cf1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="远程终端">
+      <UniqueIdentifier>{aeaa6f8e-cc11-492d-bf7e-72a9b8d2fc00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="系统管理">
+      <UniqueIdentifier>{b6001fd7-6c90-4d47-b0ae-02713ece2ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="远程桌面">
+      <UniqueIdentifier>{d0e72c41-ef46-4b50-8f73-bfb8098ec8df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="远程文件">
+      <UniqueIdentifier>{df5cd551-c511-410c-8c51-ddbba8d17946}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="远程音频">
+      <UniqueIdentifier>{6f332893-07b6-4c91-8136-bc192911db40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="远程视频">
+      <UniqueIdentifier>{f14fd6dc-a8c3-4ccc-b2e5-29cf75539bc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="远程注册表">
+      <UniqueIdentifier>{f65fb01d-e611-4d7e-9334-a83b5390dfa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="服务管理">
+      <UniqueIdentifier>{610b83fd-9379-4a05-916f-824648a78d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{0da152ba-b702-412b-a424-f7976fb7c040}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="KernelManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Talk.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>公用函数</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager.cpp">
+      <Filter>公用函数</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientSocket.cpp">
+      <Filter>连接请求类</Filter>
+    </ClCompile>
+    <ClCompile Include="Login.cpp">
+      <Filter>登陆</Filter>
+    </ClCompile>
+    <ClCompile Include="RegEditEx.cpp">
+      <Filter>注册表</Filter>
+    </ClCompile>
+    <ClCompile Include="Buffer.cpp">
+      <Filter>缓冲区</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellManager.cpp">
+      <Filter>远程终端</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemManager.cpp">
+      <Filter>系统管理</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenManager.cpp">
+      <Filter>远程桌面</Filter>
+    </ClCompile>
+    <ClCompile Include="ScreenSpy.cpp">
+      <Filter>远程桌面</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>远程文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>远程音频</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>远程音频</Filter>
+    </ClCompile>
+    <ClCompile Include="CaptureVideo.cpp">
+      <Filter>远程视频</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoCap.cpp">
+      <Filter>远程视频</Filter>
+    </ClCompile>
+    <ClCompile Include="VideoManager.cpp">
+      <Filter>远程视频</Filter>
+    </ClCompile>
+    <ClCompile Include="RegeditOpt.cpp">
+      <Filter>远程注册表</Filter>
+    </ClCompile>
+    <ClCompile Include="RegManager.cpp">
+      <Filter>远程注册表</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerManager.cpp">
+      <Filter>服务管理</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Script.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DynamicAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="KernelManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Talk.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="zlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>公用函数</Filter>
+    </ClInclude>
+    <ClInclude Include="Manager.h">
+      <Filter>公用函数</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientSocket.h">
+      <Filter>连接请求类</Filter>
+    </ClInclude>
+    <ClInclude Include="Login.h">
+      <Filter>登陆</Filter>
+    </ClInclude>
+    <ClInclude Include="RegEditEx.h">
+      <Filter>注册表</Filter>
+    </ClInclude>
+    <ClInclude Include="Buffer.h">
+      <Filter>缓冲区</Filter>
+    </ClInclude>
+    <ClInclude Include="ShellManager.h">
+      <Filter>远程终端</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemManager.h">
+      <Filter>系统管理</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenManager.h">
+      <Filter>远程桌面</Filter>
+    </ClInclude>
+    <ClInclude Include="ScreenSpy.h">
+      <Filter>远程桌面</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>远程文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>远程音频</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>远程音频</Filter>
+    </ClInclude>
+    <ClInclude Include="CaptureVideo.h">
+      <Filter>远程视频</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoCap.h">
+      <Filter>远程视频</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoCodec.h">
+      <Filter>远程视频</Filter>
+    </ClInclude>
+    <ClInclude Include="VideoManager.h">
+      <Filter>远程视频</Filter>
+    </ClInclude>
+    <ClInclude Include="RegeditOpt.h">
+      <Filter>远程注册表</Filter>
+    </ClInclude>
+    <ClInclude Include="RegManager.h">
+      <Filter>远程注册表</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerManager.h">
+      <Filter>服务管理</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

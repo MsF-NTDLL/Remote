@@ -57,7 +57,7 @@ void CClientSocket::Disconnect()
 	SetEvent(m_hEvent);	  
 
 
-	cout<<"ShutDown"<<endl;
+	//cout<<"ShutDown"<<endl;
 	
 	m_Socket = INVALID_SOCKET;
 }
@@ -104,7 +104,7 @@ bool CClientSocket::Connect(LPCTSTR lpszHost, UINT nPort)
 
 	// 不用保活机制，自己用心跳实瑞
 	
-	const char chOpt = 1; // True
+	const int chOpt = 1; // True
 	// Set KeepAlive 开启保活机制, 防止服务端产生死连接
 	if (setsockopt(m_Socket, SOL_SOCKET, SO_KEEPALIVE, (char *)&chOpt, sizeof(chOpt)) == 0)
 	{
@@ -357,7 +357,8 @@ int CClientSocket::SendWithSplit(LPBYTE lpData, UINT nSize, UINT nSplitSize)
 	// 依次发送
 	for (size = nSize; size >= nSplitSize; size -= nSplitSize)
 	{
-		for (int i = 0; i < nSendRetry; i++)
+		int i = 0;
+		for (; i < nSendRetry; i++)
 		{
 			nRet = send(m_Socket, pbuf, nSplitSize, 0);
 			if (nRet > 0)
@@ -373,7 +374,8 @@ int CClientSocket::SendWithSplit(LPBYTE lpData, UINT nSize, UINT nSplitSize)
 	// 发送最后的部分
 	if (size > 0)
 	{
-		for (int i = 0; i < nSendRetry; i++)
+		int i = 0;
+		for (; i < nSendRetry; i++)
 		{
 			nRet = send(m_Socket, (char *)pbuf, size, 0);
 			if (nRet > 0)

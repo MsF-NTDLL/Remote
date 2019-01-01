@@ -246,7 +246,7 @@ void CScreenSpy::ScanScreen( HDC hdcDest, HDC hdcSrc, int nWidth, int nHeight)
 	UINT	nJumpLine = 50;
 	UINT	nJumpSleep = nJumpLine / 10; // …®√Ëº‰∏Ù
 	// …®√Ë∆¡ƒª
-	for (int i = 0, int	nToJump = 0; i < nHeight; i += nToJump)
+	for (int i = 0,	nToJump = 0; i < nHeight; i += nToJump)
 	{
 		int	nOther = nHeight - i;
 		

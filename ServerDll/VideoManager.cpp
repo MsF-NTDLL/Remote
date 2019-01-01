@@ -13,6 +13,7 @@
 CVideoManager::CVideoManager(CClientSocket *pClient) : CManager(pClient)
 {
 	m_bIsCompress = false;
+	m_pVideoCap = NULL;
 	m_pVideoCodec = NULL;
 	m_bIsWorking = true;
 
@@ -67,7 +68,7 @@ bool CVideoManager::Initialize()
 
 DWORD WINAPI CVideoManager::WorkThread( LPVOID lparam )
 {
-	static	dwLastScreen = GetTickCount();
+	static DWORD	dwLastScreen = GetTickCount();
 	
 	CVideoManager *pThis = (CVideoManager *)lparam;
 	pThis->m_CapVideo.GetBmpInfo();
