@@ -5,6 +5,11 @@
 
 #pragma once
 
+#ifdef _DEBUG
+// 检测内存泄漏的工具，如果没有安装，需注释下面这行代码
+#include "vld.h"
+#endif
+
 #ifndef _SECURE_ATL
 #define _SECURE_ATL 1
 #endif

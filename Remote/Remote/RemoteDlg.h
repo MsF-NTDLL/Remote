@@ -15,6 +15,7 @@ class CRemoteDlg : public CDialogEx
 // 构造
 public:
 	CRemoteDlg(CWnd* pParent = NULL);	// 标准构造函数
+	~CRemoteDlg();
 
 	CTrueColorToolBar m_ToolBar;        // 工具条扩展类
 	CFloatWnd* m_FloatWnd;

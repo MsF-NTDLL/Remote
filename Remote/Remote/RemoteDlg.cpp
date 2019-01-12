@@ -120,6 +120,20 @@ CRemoteDlg::CRemoteDlg(CWnd* pParent /*=NULL*/)
 	iCount = 0;
 }
 
+CRemoteDlg::~CRemoteDlg()
+{
+	if (m_FloatWnd)
+	{
+		delete m_FloatWnd;
+		m_FloatWnd = NULL;
+	}
+	if(m_iocpServer)
+	{
+		delete m_iocpServer;
+		m_iocpServer = NULL;
+	}
+}
+
 void CRemoteDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
